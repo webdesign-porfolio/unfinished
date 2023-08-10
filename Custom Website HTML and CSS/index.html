@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style-swiper.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo"><a href="#">LOGO</a></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg class="responsive-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <ul class="all-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="dropdown">
+              <a href="#portfolio">Portfolio</a>
+              <ul class="dropdown-items">
+                  <li><a href="#project1">Design</a></li>
+                  <li><a href="#project2">Photography</a></li>
+                  <li><a href="#project3">Video Gallery</a></li>
+                  <!-- Add more project items as needed -->
+              </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+      </nav>
+    </header>
+
+    <section class="homepage" id="home">
+      <div class="content">
+        <div class="text">
+          <h1>GRAEME DAYLE ALQUILOS</h1>
+          <p>A college student and also a graphic designer.</p>
+        </div>
+        <a href="#">My works </a>
+      </div>
+      <div class="social-media-links">
+        <a href="#behance">Behance</a>  | <a href="#faceboo">Facebook</a>  | <a href="#instagram">Instagram</a>
+      </div>
+    </section>
+
+
+    <!--ABOUT SECTION-->
+    <section class="about-section" id="about">
+      <div class="header-about">
+        <h3>GRAEME DAYLE ALQUILOS</h3>
+        <hr>
+        <h3>ABOUT ME</h3>
+      </div>
+    <div class="two-column-content">
+      <div class="column column-1">
+          <img src="profile.jpg">
+          <h5>email</h5>
+          <p>lorem.ipsum@gmail.com</p>
+          <h5>phone number</h5>
+          <p>+63 991-638-6501</p>
+          <h5>location</h5>
+          <p>Phils. 6000, Cebu City</p>
+
+          <div class="language">
+            <h3>LANGUAGE</h3>
+            <p>Bisaya</p>
+            <p>Tagalog</p>
+            <p>English</p>
+            <p>Basic Korean</p>
+          </div>
+          
+          <div class="social-media-about-section">
+            <a href="#">facebook</a> |
+            <a href="#">instagram</a> | <br>
+            <a href="#">twitter</a> |
+            <a href="#">linkedin</a> |
+            <a href="#">behance</a> 
+          </div>
+
+      </div>
+      <div class="column column-2">
+          <p>I am a fourth-year college student at Cebu Technological University -  Main Campus, 
+            pursuing a Bachelor of Science in Graphics and Design.</p>
+
+          <div class="interest">
+            <h3>INTEREST</h3>
+            <p>Culinary Art</p>
+            <p>History</p>
+            <p>Classical Music</p>
+          </div>
+
+          <div class="education">
+            <h3>EDUCATION</h3>
+
+            <h4>Tertiary</h4>
+            <p style="font-weight: 500;">Cebu Technological University - Main Campus</p>
+            <p>Bachelor of Science in Graphics and Design (BSGD).</p>
+            <p>2020 - Present</p>
+            
+
+            <h4>Secondary</h4>
+            <p style="font-style: italic;">Senior High School</p>
+            <p style="font-weight: 500;">San Isidro Academy of Tudela, Inc.</p>
+            <p>General Academic Strand (GAS) </p>
+            <p>2018 - 2020 </p>
+            <p style="font-style: italic; padding-top: 0.5%;">Junior High School </p>
+            <p style="font-weight: 500;">San Isidro Academy of Tudela, Inc. </p>
+            <p>2014 - 2018</p>
+
+            <h4>Primary</h4>
+            <p style="font-weight: 500; padding-top: 0.5%;">Tudela Central School </p>
+            <p>2008 - 2014</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="skills-sevices-softwares">
+    <div class="tab-container">
+      <div class="tab active" onclick="showTabContent(event, 'tab1')">Skills</div>
+      <div class="tab" onclick="showTabContent(event, 'tab2')">Services</div>
+      <div class="tab" onclick="showTabContent(event, 'tab3')">Software</div>
+    </div>
+  
+    <div class="tab-content active" id="tab1">
+      <div class="skills-item">
+        <img src="images/html5.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="skills-item">
+        <img src="images/html5.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="skills-item">
+        <img src="images/html5.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="break"></div>
+      <div class="skills-item">
+        <img src="images/html5.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="skills-item">
+        <img src="images/html5.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="skills-item">
+        <img src="images/html5.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  
+    <div class="tab-content" id="tab2">
+      <div class="wrapper-tab-content">
+        <div class="box">
+           <div class="front-face">
+              <div class="icon">
+                 <i class="fas fa-code"></i>
+              </div>
+              <span>Web Design</span>
+           </div>
+           <div class="back-face">
+              <span>Web Design</span>
+              <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.
+              </p>
+           </div>
+        </div>
+        <div class="box">
+           <div class="front-face">
+              <div class="icon">
+                 <i class="fas fa-chart-line"></i>
+              </div>
+              <span>Advertising</span>
+           </div>
+           <div class="back-face">
+              <span>Advertising</span>
+              <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.
+              </p>
+           </div>
+        </div>
+        <div class="box">
+           <div class="front-face">
+              <div class="icon">
+                 <i class="fas fa-rocket"></i>
+              </div>
+              <span>Game Design</span>
+           </div>
+           <div class="back-face">
+              <span>Game Design</span>
+              <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.
+              </p>
+           </div>
+       </div>
+     </div>
+    </div>
+
+    <div class="tab-content" id="tab3">
+      <div class="item"><img src="images/html5.png">html5</div>
+      <div class="item"><img src="images/css.png">css</div>
+      <div class="item"><img src="images/bootstrap.png">bootstrap</div>
+      <div class="item"><img src="images/js.png">javascript</div>
+      <div class="break"></div>
+      <div class="item"><img src="images/nodejs.jpg">nodejs</div>
+      <div class="item"><img src="images/php.png">php</div>
+      <div class="item"><img src="images/reactjs.png">reactjs</div>
+      <div class="item"><img src="images/tailwind.jpg">tailwind</div>
+      <div class="break"></div>
+      <div class="item"><img src="images/vuejs.png">vuejs</div>
+    </div>
+  </section>
+
+
+  <!--SWIPER-->
+  <section class="main swiper mySwiper">
+    <div class="wrapper swiper-wrapper">
+      <div class="slide swiper-slide">
+        <img src="images/graphic design.jpg" alt="" class="image" />
+        <div class="image-data">
+          <span class="text">Lorem ipsum dolor sit.</span>
+          <h2>
+            Graphic Design
+          </h2>
+          <a href="#" class="button">Visit</a>
+        </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img src="images/photography.jpg" alt="" class="image" />
+        <div class="image-data">
+          <span class="text">Lorem ipsum dolor sit..</span>
+          <h2>
+            Photography
+          </h2>
+          <a href="#" class="button">Visit</a>
+        </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img src="images/video.jpg" alt="" class="image" />
+        <div class="image-data">
+          <span class="text">Lorem ipsum dolor sit.</span>
+          <h2>
+            Video Gallery
+          </h2>
+          <a href="#" class="button">Visit</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+
+  <!--Contact // Contact Form-->
+  <div class="contact" id="contact">
+    <div class="contact-left">
+      <h1>CONTACT</h1>
+      <p style="opacity: 90%; line-height: 15px; font-size: 14px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ullam soluta error.</p>
+      <div class="break-space"></div>
+      <h3>Address</h3>
+      <p style="opacity: 90%; line-height: 15px; font-size: 14px;">Robert Robertson, 1234 NW Bobcat Lane, <br> St. Robert, MO 65584-5678.</p>
+      <h3>Phone</h3>
+      <p style="opacity: 90%; line-height: 15px; font-size: 14px;">+63 991 - 638 - 6501</p>
+      <h3>Email</h3>
+      <p style="opacity: 90%; line-height: 15px; font-size: 14px;">Lorem.ipsum456@yahoo.com</p>
+    </div>
+    <!--Division-->
+    <div class="contact-right">
+      <h1>CONTACT FORM</h1>
+      <div class="form">
+        <form>
+          <input type="text" placeholder="Name*" required>
+          <input type="text" placeholder="Phone Number*" required>
+          <input type="email" placeholder="Email*" required>
+          <textarea placeholder="Message*" required></textarea>
+          <button id="submit" type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <section>
+  <div class="bottom-content">
+    <div class="bottom-header">
+      <img src="images/logo-img.jpg">
+    </div>
+    <div class="bottom-lower">
+    <!--LEFT-->
+    <div class="bottom-left-content">
+      <h2><i class="fa-solid fa-phone"></i>CONTACT</h2>
+      <p>+63 991 - 638 - 6501</p>
+      <div class="bottom-breaker"></div>
+      <h2><i class="fa-solid fa-location-dot"></i>LOCATION</h2>
+      <p>Robert Robertson, 1234 NW Bobcat Lane, <br> St. Robert, MO 65584-5678.</p>
+    </div>
+    <!--MID-->
+    <div class="bottom-mid-content">
+      <h2>FOLLOW ME</h2>
+      <div class="bottom-icons">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-square-behance"></i>
+      </div>
+    </div>
+    <!--RIGHT-->
+    <div class="bottom-right-content">
+      <h2>QUCK ACTIONS</h2>
+      <div class="quick-actions-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    </div>
+  </div>
+  </section>
+
+  <footer class="footer">
+    <div class="copyright">
+      <p>© 2023 GRAEME DAYLE ALQUILOS. All Rights Reserved.</p>
+    </div>
+    <div class="footer-air"></div>
+    <div class="footer-air"></div>
+    <div class="footer-up">
+      <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+  
+  <!--SCRIPTS-->
+  <script src="JS/swiper-bundle.min.js"></script>
+  <script>
+    const dropdown = document.querySelector('.dropdown');
+    const dropdownItems = document.querySelector('.dropdown-items');
+
+    dropdown.addEventListener('click', () => 
+    {
+        if (dropdownItems.style.display === 'none' || dropdownItems.style.display === '') 
+          {
+            dropdownItems.style.display = 'block';
+          }  
+        else 
+          {
+            dropdownItems.style.display = 'none';
+          }
+    });
+
+// Close the dropdown when clicking outside of it
+    document.addEventListener('click', (event) => 
+    {
+        if (!dropdown.contains(event.target)) 
+          {
+            dropdownItems.style.display = 'none';
+          }
+    });
+
+// Prevent the dropdown from closing when clicking inside it
+          dropdownItems.addEventListener('click', (event) => 
+          {
+            event.stopPropagation();
+          });
+
+// Script for tab-layout
+function showTabContent(event, tabId) {
+      // Hide all tab contents
+      const tabContents = document.querySelectorAll('.tab-content');
+      tabContents.forEach((content) => {
+        content.classList.remove('active');
+      });
+
+      // Deactivate all tabs
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach((tab) => {
+        tab.classList.remove('active');
+      });
+
+      // Show the selected tab content
+      const selectedTabContent = document.getElementById(tabId);
+      selectedTabContent.classList.add('active');
+
+      // Activate the clicked tab
+      event.target.classList.add('active');
+    }
+
+    //Initialize Swiper
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+  </script>
+  </body>
+</html>
