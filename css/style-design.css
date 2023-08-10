@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    /*background: #f2f2f2;*/
+    background: none;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+  }
+  
+  .navbar {
+    display: flex;
+    padding: 0 10px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar input#menu-toggler {
+    display: none;
+  }
+  
+  .navbar #hamburger-btn {
+    cursor: pointer;
+    display: none;
+  }
+  
+  
+  .navbar .all-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .navbar .all-links li {
+    position: relative;
+    list-style: none;
+  }
+  
+  .navbar .logo a {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+  
+  
+  header a, footer a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #333;
+    height: 100%;
+    padding: 20px 0;
+    display: inline-block;
+  }
+  
+  header a:hover, footer a:hover {
+    color: #000;
+  }
+  
+  /*****************/
+  
+  .all-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .all-links li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .all-links li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .dropdown-items {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
+  
+  .dropdown-items li {
+    display: block;
+  }
+  
+  .dropdown-items li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 8px 16px;
+  }
+
+  /*** Media Queries ***/
+  @media screen and (max-width: 860px) 
+  {
+    .navbar .all-links {
+      position: fixed;
+      left: -100%;
+      width: 300px;
+      display: block;
+      height: 100vh;
+      top: 75px;
+      background: #333;
+      transition: left 0.3s ease;
+    }
+  
+    .navbar #menu-toggler:checked~.all-links {
+      left: 0;
+    }
+  
+    .navbar .all-links li {
+      font-size: 18px;
+    }
+  
+    .navbar #hamburger-btn {
+      display: block;
+    }
+  }
